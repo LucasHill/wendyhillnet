@@ -37,7 +37,7 @@ gulp.task('clean', cb => {
 gulp.task('browserSync', () => {
   browserSync({
     server: {
-      baseDir: './'
+      baseDir: './dist'
     }
   });
 });
@@ -82,8 +82,14 @@ gulp.task('styles', () => {
 
 gulp.task('htmlReplace', () => {
   gulp.src('index.html')
-  .pipe(htmlReplace({css: ['styles/main.css', 'styles/bootstrap.css'], js: 'js/app.js'}))
+  .pipe(htmlReplace({css: ['styles/main.css'], js: 'js/app.js'}))
   .pipe(gulp.dest(paths.dist));
+});
+
+gulp.task('copy-index-html', function() {
+  gulp.src('./index.html')
+    // Perform minification tasks, etc here
+      .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('images', () => {
@@ -104,7 +110,7 @@ gulp.task('watchTask', () => {
 });
 
 gulp.task('watch', cb => {
-  runSequence('clean', ['browserSync', 'watchTask', 'watchify', 'styles', 'lint', 'images'], cb);
+  runSequence('clean', ['browserSync', 'watchTask', 'watchify', 'styles', 'lint', 'images', 'copy-index-html'], cb);
 });
 
 gulp.task('build', cb => {

@@ -23,7 +23,7 @@ export default React.createClass({
             return(
                 <Panel>
                 <Jumbotron>
-                    <img src="../dist/images/jumbotron.png"/>
+                    <img src="../images/jumbotron.png"/>
                 </Jumbotron>
             </Panel>)
         }
