@@ -23,9 +23,7 @@ export default React.createClass({
             return(
                 <Panel>
                 <Jumbotron>
-                    <h1>Hello, wold!</h1>
-                    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                    <p><Button bsStyle="primary">Learn more</Button></p>
+                    <img src="../dist/images/jumbotron.png"/>
                 </Jumbotron>
             </Panel>)
         }
@@ -38,13 +36,16 @@ export default React.createClass({
                             <NavBrand><a href="#">Wendy Hill</a></NavBrand>
                             <Nav>
                                 <NavDropdown title="About" id="basic-nav-dropdown">
-                                    <MenuItem eventKey="1">Art Statement</MenuItem>
-                                    <MenuItem eventKey="2">Bio</MenuItem>
-                                    <MenuItem eventKey="3">Curriculum Vitae</MenuItem>
+                                    <LinkContainer to="/statement"><MenuItem>Art Statement</MenuItem></LinkContainer>
+                                    <LinkContainer to="/biography"><MenuItem>Bio</MenuItem></LinkContainer>
+                                    <LinkContainer to="/vitae"><MenuItem>Curriculum Vitae</MenuItem></LinkContainer>
                                 </NavDropdown>
                                 <LinkContainer to="/books"><NavItem>Books</NavItem></LinkContainer>
-                                <NavItem href="http://www.wendyhill.net/blog">Blog</NavItem>
                                 <LinkContainer to="/gallery"><NavItem>Gallery</NavItem></LinkContainer>
+                                <LinkContainer to="/events"><NavItem>Events</NavItem></LinkContainer>
+                                <LinkContainer to="/contact"><NavItem>Contact</NavItem></LinkContainer>
+                                <NavItem href="http://www.wendyhill.net/blog">Blog</NavItem>
+                                <NavItem href="http://www.instagram.com">Instagram</NavItem>
                             </Nav>
                         </Navbar>
                     {this.props.children || jumbo()}
