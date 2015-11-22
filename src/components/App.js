@@ -16,17 +16,17 @@ export default React.createClass({
     render() {
         function jumbo() {
             return(
-
                 <Jumbotron>
                     <img src="./images/jumbotron.png"/>
                 </Jumbotron>
-         )
+            )
         }
         return (
-            <div>
+            <div className="wrapper">
                 <section>
-                    <div className="container">
+                    <div className="container-fluid">
                         <Nav />
+                        <hr/>
                         <Panel>
                             {this.props.children || jumbo()}
                         </Panel>

@@ -8,7 +8,6 @@ import Events from './components/Events';
 import Contact from './components/Contact';
 import Statement from './components/Statement';
 import Vitae from './components/Vitae'
-import Biography from './components/Biography'
 
 window.React = React;
 
@@ -21,7 +20,6 @@ ReactDOM.render(
         <Route path="/contact" component={Contact}/>
         <Route path="/statement" component={Statement}/>
         <Route path="/vitae" component={Vitae}/>
-        <Route path="/biography" component={Biography}/>
       </Route>
     </Router>
     , document.getElementById('content')

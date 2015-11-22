@@ -17,8 +17,7 @@ export default React.createClass({
                 <NavBrand><a href="#">Wendy Hill</a></NavBrand>
                 <Nav>
                     <NavDropdown title="About" id="basic-nav-dropdown">
-                        <LinkContainer to="/statement"><MenuItem>Art Statement</MenuItem></LinkContainer>
-                        <LinkContainer to="/biography"><MenuItem>Bio</MenuItem></LinkContainer>
+                        <LinkContainer to="/statement"><MenuItem>Maker Statement</MenuItem></LinkContainer>
                         <LinkContainer to="/vitae"><MenuItem>Curriculum Vitae</MenuItem></LinkContainer>
                     </NavDropdown>
                     <LinkContainer to="/books"><NavItem>Books</NavItem></LinkContainer>
