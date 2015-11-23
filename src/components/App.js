@@ -16,9 +16,7 @@ export default React.createClass({
     render() {
         function jumbo() {
             return(
-                <Jumbotron>
-                    <img src="./images/jumbotron.png"/>
-                </Jumbotron>
+                <img src="./images/jumbotron.png"/>
             )
         }
         return (
