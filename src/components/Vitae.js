@@ -16,7 +16,7 @@ export default React.createClass({
       target: 'map',
       layers: [
         new Layers.layer.Tile({
-          source: new Layers.source.MapQuest({layer: 'sat'})
+          source: new Layers.source.OSM()
         })
       ],
       view: new Layers.View({
