@@ -9,14 +9,10 @@ import Navbar from 'react-bootstrap/lib/Navbar'
 import Nav from './Nav'
 
 export default React.createClass({
-    returnSomething(something) {
-        //this is only for testing purposes. Check /test/components/App-test.js
-        return something;
-    },
     render() {
         function jumbo() {
             return(
-                <img src="./images/jumbotron.png"/>
+                <img className="jumbotron-img" src="./images/jumbotron.png"/>
             )
         }
         return (

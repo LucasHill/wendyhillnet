@@ -21,6 +21,6 @@ ReactDOM.render(
         <Route path="/statement" component={Statement}/>
         <Route path="/vitae" component={Vitae}/>
       </Route>
-    </Router>
-    , document.getElementById('content')
+    </Router>,
+    document.getElementById('content')
 );
