@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react/lib/React';
 
 import Button from 'react-bootstrap/lib/Button';
 import Layers from 'openlayers'
@@ -10,7 +10,6 @@ export default React.createClass({
         <div id="map" className="sidebar-map"></div>
     );
   },
-
   componentDidMount() {
     let map = new Layers.Map({
       target: 'map',

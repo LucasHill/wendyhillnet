@@ -1,14 +1,16 @@
-import React from 'react';
+import React from 'react/lib/React';
 
 import ListGroup from 'react-bootstrap/lib/ListGroup'
 import ListGroupItem from 'react-bootstrap/lib/ListGroupItem'
+import styles from '../styles/main.css';
+
 
 export default React.createClass({
   render() {
     return (
-      <ListGroup className="bookGroup">
+      <ListGroup className={styles.bookGroup}>
         <ListGroupItem>
-          <img height="250px" src="./images/books/bias_curves.jpg"></img>
+          <img height="250px" src={require("../images/books/biasCurves.jpg")}></img>
           <p>Lorem ipsum dolor sit amet, ut pro facer impedit meliore, nam dicam labore dicunt te. Stet nemore alterum vim cu. Pro et enim autem euripidis, no vix saperet denique concludaturque. Vim expetenda mediocritatem et, nec id consul impedit, nonumes scribentur mel id. Est soluta dicunt accommodare et, sonet melius verterem cu ius. Mutat vocent moderatius eu sed, in sed diam dicam. Vel cu feugait corpora definitiones.
 
             Vel ei rebum tacimates incorrupte. Cum te honestatis necessitatibus, dicit alienum ea est. Has alia habeo an, et ius dolorem persecuti. Quis assentior eu eam, inimicus molestiae theophrastus pri at. Prima eripuit vituperatoribus ea eam, ipsum lorem periculis ut per, elit corrumpit no quo. Erant perfecto reformidans in ius, duo inani possit cu.

@@ -3,7 +3,6 @@
     position: absolute;
     left: 25%;
     right: 25%;
-
 }
 
 .wrapper {
@@ -12,7 +11,7 @@
     padding: 75px 75px 75px 75px;
 }
 
-.jumbotron-img {
+.jumbotronImg {
     display: table-caption;
     margin: 0 auto;
 }
