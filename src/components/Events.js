@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react/lib/React';
 
 import Button from 'react-bootstrap/lib/Button';
 

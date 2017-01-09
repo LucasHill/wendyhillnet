@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react/lib/React';
 
 import Navbar from 'react-bootstrap/lib/Navbar'
-import NavBrand from 'react-bootstrap/lib/NavBrand'
+import NavBrand from 'react-bootstrap/lib/NavbarBrand'
 import Nav from 'react-bootstrap/lib/Nav'
 import NavItem from 'react-bootstrap/lib/NavItem'
 import NavDropdown from 'react-bootstrap/lib/NavDropdown'
